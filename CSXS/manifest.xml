@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExtensionBundleId="com.timestampcutter.cep" ExtensionBundleVersion="1.0.0" Version="8.0">
+  <ExtensionList>
+    <Extension Id="com.timestampcutter.cep.panel" Version="1.0.0"/>
+  </ExtensionList>
+
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name="PPRO" Version="[13.0,99.9]"/>
+    </HostList>
+    <LocaleList>
+      <Locale Code="All"/>
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="8.0"/>
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+
+  <DispatchInfoList>
+    <Extension Id="com.timestampcutter.cep.panel">
+      <DispatchInfo>
+        <Resources>
+          <MainPath>./client/index.html</MainPath>
+          <ScriptPath>./jsx/hostscript.jsx</ScriptPath>
+          <CEFCommandLine/>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>Timestamp Cutter</Menu>
+          <Geometry>
+            <Size>
+              <Height>560</Height>
+              <Width>360</Width>
+            </Size>
+            <MinSize>
+              <Height>420</Height>
+              <Width>320</Width>
+            </MinSize>
+          </Geometry>
+          <Icons/>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>
